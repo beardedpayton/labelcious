@@ -1,10 +1,8 @@
-module.exports = app => {
-  // Your code here
-  app.log('Yay, the app was loaded!')
-
-  // For more information on building apps:
-  // https://probot.github.io/docs/
-
-  // To get your app running against GitHub, see:
-  // https://probot.github.io/docs/development/
+module.exports = robot => {
+  robot.on('issues.opened', async context => {
+    config = await context.config('config.yml')
+    const params = context.issue({body: config.goodFirstIssueComment})
+    return context.github.issues.createComment(params)
+  })
 }
+ 
