@@ -4,7 +4,7 @@ Labelcious is a GitHub app built to make OSS maintainers lives easier! It helps 
 
 ## Usage
 
-1. Install the labelcious bot on the repositories you'd like it to help with.
+1. Install the [labelcious bot](https://github.com/apps/labelcious/) on the repositories you'd like it to help with.
 2. Create a ```.github/config.yml``` in the repository labelcious is installed on.
 
 ```YAML
