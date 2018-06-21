@@ -7,17 +7,6 @@ async function labelcious(context) {
   }
 
   if (label) {
-
-    if (config.customLabels === true) {
-
-     for (customLabel in config.labels) {
-        if (label.name === customLabel) {
-          const params = context.issue({body: config.labels[customLabel]})
-          context.github.issues.createComment(params)
-        }
-     }
-    }
-
     for(nativeLabel in config.githubLabels) {
       if (label.name === nativeLabel) {
         const params = context.issue({body: config.githubLabels[nativeLabel]})
