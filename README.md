@@ -65,4 +65,4 @@ custom4: >
 
 ## License
 
-[ISC](LICENSE) © 2018 beardedpayton <beardedpayton@gmail.com> (https://github.com/apps/labelcious)
+[ISC](LICENSE) © 2018 Payton Burdette <paytonburd@gmail.com> (https://github.com/apps/labelcious)
