@@ -11,7 +11,7 @@ Labelcious is a GitHub app built to make OSS maintainers lives easier! It helps 
 
 ```YAML
 # Please supply comments to be used for native GitHub labels 
-# Or set it's value to 'false' if not comments are not needed.
+# If comments are not needed for a label simply remove the key value pair from the gitHubLabels object
 # Add a custom label by providing new key/value. key should be EXACT name of label and value should be the comment.
 githubLabels:
   bug: >
@@ -35,7 +35,8 @@ githubLabels:
   question: >
     That's a really good question. Give me a little bit and I'll get back to you.
     
-  wont fix: false
+  wont fix: >
+    I ain't fixing this.
   
   # custom labels start here, everything above is native GitHub labels that come with every repo
   docs: >
