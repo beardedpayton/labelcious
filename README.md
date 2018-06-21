@@ -36,7 +36,8 @@ githubLabels:
     That's a really good question. Give me a little bit and I'll get back to you.
     
   wont fix: false
-
+  
+  # custom labels start here, everything above is native GitHub labels that come with every repo
   docs: >
     Love this! We should include this in our docs. Since @beardedpayton is over our docs he will handle it!
 
