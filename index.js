@@ -13,18 +13,11 @@ async function labelcious(context) {
   if (label) {
 
     if (config.customLabels === true) {
-      const customLabels = config.labels
-      const dynamicVars = {}
-  
-     // create dynamic variable names and set value
-     for (let i = 0; i < customLabels.length; i++) {
-        dynamicVars['custom' + i] = customLabels[i]
-     }
-  
+
      // set custom comment for each dynamic variable
-     for (customLabel in dynamicVars) {
-        if (label.name === dynamicVars[customLabel]) {
-          const params = context.issue({body: config[customLabel]})
+     for (customLabel in config.labels) {
+        if (label.name === customLabel) {
+          const params = context.issue({body: config.labels[customLabel]})
           context.github.issues.createComment(params)
         }
      }
