@@ -1,6 +1,8 @@
 # labelcious
 
-Labelcious is a GitHub app built to make OSS maintainers lives easier! It helps maintainers automate comments on issues based on what label is selected. The maintainer has full control over what native/custom GitHub labels the bot should reply on and what the bot should say!  
+Labelcious is a GitHub app built to make OSS maintainers lives easier! It helps maintainers automate comments on issues based on what label is selected. The maintainer has full control over what native/custom GitHub labels the bot should reply on and what the bot should say!
+
+<img width="791" alt="screen shot 2018-06-21 at 9 47 44 am" src="https://user-images.githubusercontent.com/20526900/41725174-342582e6-753d-11e8-9dc3-2e49c0910d93.png">
 
 ## Usage
 
