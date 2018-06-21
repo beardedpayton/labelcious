@@ -25,7 +25,7 @@ async function labelcious(context) {
      for (customLabel in dynamicVars) {
         if (label.name === dynamicVars[customLabel]) {
           const params = context.issue({body: config[customLabel]})
-          return context.github.issues.createComment(params)
+          context.github.issues.createComment(params)
         }
      }
     }
