@@ -7,11 +7,12 @@ Labelcious is a GitHub app built to make OSS maintainers lives easier! It helps 
 1. Install the labelcious bot on the repositories you'd like it to help with.
 2. Create a ```.github/config.yml``` in the repository labelcious is installed on.
 
-```
+```YAML
 # Please supply comments to be used for native GitHub labels. 
 # You can turn off bot comments for a label by setting it's value to 'false'
 bugComment: >
   Yuck! Bugs are no fun and this was really unexpected. Please provide everything you can about this bug.
+
 duplicateComment: >
   We are sorry you didn't see this but it already exists! Thanks for letting us know anyways!
   
@@ -23,8 +24,10 @@ goodFirstIssueComment: >
   
 helpWantedComment: >
   HELP, HELP, HELP... We need some help
+
 invalidComment: >
   Are you really sure about this? This just doesn't seem right.
+
 questionComment: >
   That's a really good question. Give me a little bit and I'll get back to you.
   
