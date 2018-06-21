@@ -4,6 +4,17 @@ async function labelcious(context) {
   // grab payload label
   const label = context.payload.label
 
+  if (config.customLabels === true) {
+    const customLabels = config.labels
+    const dynamicVars = {}
+
+   // create dynamic variable names and set value
+   for (let i = 0; i < customLabels.length; i++) {
+      dynamicVars['custom' + i] = customLabels[i]
+   }
+   
+  }
+
   // do nothing if no labels exists
   if (!label) {
     return
